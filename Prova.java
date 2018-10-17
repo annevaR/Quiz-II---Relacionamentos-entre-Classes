@@ -25,15 +25,17 @@ public class Prova {
 		int nmr = 1;
 		for (Pergunta i : questoes){
 			System.out.println("== QUESTOES==" + "\n" + nmr +  "-" + i.getDescricao());
+	        nmr ++;
 			
 		}
 	}
 	
-		public void imprimirGabarito(){
-			int nmr = 1;
-			for (Pergunta o : questoes){
-				System.out.println("== GABARITO ==" + "\n" +nmr + "-" + o.getResposta());
-			}	
+	public void imprimirGabarito(){
+		int nmr = 1;
+		for (Pergunta o : questoes){
+			System.out.println("== GABARITO ==" + "\n" +nmr + "-" + o.getResposta());
+		nmr ++;
+		}	
 	}
 }
 
